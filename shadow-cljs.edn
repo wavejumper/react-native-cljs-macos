@@ -1,0 +1,9 @@
+{:deps {:aliases [:dev]}
+ :nrepl {:port 9000}
+
+ :builds
+ {:app
+  {:target :react-native
+   :init-fn example.app/main
+   :output-dir "app"
+   :devtools {:preloads [websocket]}}}}
